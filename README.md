@@ -50,3 +50,26 @@ docker push us-central1-docker.pkg.dev/my-cloud-project-id/cloudrun-app/gcp-depl
 
 ![image](https://github.com/user-attachments/assets/7528b28a-dd86-4337-82d0-4628ad6042b8)
 
+## Successfully Pushed Docker Image to Artifact Registry!
+
+### ✅ Verify the Image in Google Cloud Console
+ [Google Cloud Console](https://console.cloud.google.com/). → **Artifact Registry** → **cloudrun-app** → **`gcp-deployment:latest`** should be listed.
+ 
+## 🛠️ Deploying the Image to Cloud Run
+Now that image is stored in Artifact Registry, it can be deployed to **Google Cloud Run**:
+
+```sh
+gcloud run deploy cloudrun-app --image=us-central1-docker.pkg.dev/braided-trees-453709-c4/cloudrun-app/gcp-deployment:latest --region=us-central1 --platform=managed --allow-unauthenticated
+```
+
+### 🔍 Breakdown of the Deployment Command:
+- **`gcloud run deploy cloudrun-app`** → Deploys a new **Cloud Run** service named `cloudrun-app`.
+- **`--image=us-central1-docker.pkg.dev/...`** → container image to be deployed.
+- **`--platform=managed`** → Uses Google’s fully managed Cloud Run service.
+- **`--allow-unauthenticated`** → Allows public access to the deployed service (optional).
+
+  **Check Deployment Status:** → using **service URL**
+
+🎯 **containerized application is now live on Google Cloud Run!**
+
+
