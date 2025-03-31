@@ -27,13 +27,6 @@ gcloud auth configure-docker us-central1-docker.pkg.dev
  🔹 **`configure-docker`** → Configures Docker to use Google Cloud authentication for pushing/pulling images.
  🔹 **`us-central1-docker.pkg.dev`** → The Artifact Registry domain(`pkg.dev`) for the us-central1 region.
 
-#### Example Usage
-After running the command, image can be pushed to Artifact Registry:
-
-```sh
- docker push us-central1-docker.pkg.dev/my-cloud-project-id/cloudrun-app/gcp-deployment:latest
-```
-
 ### Step 5: Tagging the Docker Image
 
 ```sh
