@@ -6,7 +6,7 @@
 3. Click **Create Repository**.
 
 ### Step 2: Configure the Repository
-1. **Repository Name**: `gcp-deployment`
+1. **Repository Name**: `cloudrun-app`
 2. **Format**: **Docker**
 3. **Region**: `us-central1`
 4. **Encryption**: **Google-managed encryption key**
