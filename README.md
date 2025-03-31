@@ -47,3 +47,6 @@ docker push us-central1-docker.pkg.dev/my-cloud-project-id/cloudrun-app/gcp-depl
 🔹 my-cloud-project-id > gcp project (braided-trees-453709-c4)
 🔹 cloudrun-app > my artifact registry repo
 🔹 gcp-deployment:latest > Docker image
+
+![image](https://github.com/user-attachments/assets/7528b28a-dd86-4337-82d0-4628ad6042b8)
+
