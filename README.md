@@ -30,8 +30,8 @@ gcloud auth configure-docker us-central1-docker.pkg.dev
 #### Example Usage
 After running the command, image can be pushed to Artifact Registry:
 
-```
-sh docker push us-central1-docker.pkg.dev/my-cloud-project-id/cloudrun-app/gcp-deployment:latest
+```sh
+ docker push us-central1-docker.pkg.dev/my-cloud-project-id/cloudrun-app/gcp-deployment:latest
 ```
 
 ### Step 5: Tagging the Docker Image
