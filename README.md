@@ -74,6 +74,10 @@ gcloud run deploy cloudrun-app --image=us-central1-docker.pkg.dev/braided-trees-
   **Check Deployment Status:** → using **service URL**
   Service URL: https://cloudrun-app-741905373966.us-central1.run.app
 
+`https://cloudrun-app-741905373966.us-central1.run.app/WeatherForecast` 
+or
+`https://cloudrun-app-741905373966.us-central1.run.app/swagger`
+
 🎯 **containerized application is now live on Google Cloud Run!**
 
 
