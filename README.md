@@ -31,22 +31,26 @@ gcloud auth configure-docker us-central1-docker.pkg.dev
 After running the command, image can be pushed to Artifact Registry:
 
 ```
-sh docker push us-central1-docker.pkg.dev/MY_PROJECT_ID/MY_REPOSITORY/MY_IMAGE:latest
+sh docker push us-central1-docker.pkg.dev/my-cloud-project/cloudrun-app/gcp-deployment:latest
 ```
 
 ### Step 5: Tagging the Docker Image
 
 ```sh
-docker tag gcp-deployment:latest us-central1-docker.pkg.dev/MY_PROJECT_ID/MY_REPOSITORY/gcp-deployment:latest
+docker tag gcp-deployment:latest us-central1-docker.pkg.dev/my-cloud-project/cloudrun-app/gcp-deployment:latest
 ```
 
 - **`docker tag`** → Tags an existing image with a new name.
 - **`gcp-deployment:latest`** → **existing local image**.
-- **`us-central1-docker.pkg.dev/MY_PROJECT_ID/MY_REPOSITORY/gcp-deployment:latest`** → **new name** (target location in Artifact Registry).
+- **`us-central1-docker.pkg.dev/my-cloud-project/cloudrun-app/gcp-deployment:latest`** → **new name** (target location in Artifact Registry).
 
 ### Step 6: Push the Tagged Image to Artifact Registry
 After tagging, you can push the image to **Artifact Registry** with:
 
 ```sh
-docker push us-central1-docker.pkg.dev/MY_PROJECT_ID/MY_REPOSITORY/gcp-deployment:latest
+docker push us-central1-docker.pkg.dev/my-cloud-project/cloudrun-app/gcp-deployment:latest
 ```
+
+🔹 my-cloud-project > gcp project
+🔹 cloudrun-app > my artifact registry repo
+🔹 gcp-deployment:latest > Docker image
