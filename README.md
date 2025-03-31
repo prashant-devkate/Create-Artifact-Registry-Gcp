@@ -33,3 +33,21 @@ After running the command, image can be pushed to Artifact Registry:
 ```
 sh docker push us-central1-docker.pkg.dev/MY_PROJECT_ID/MY_REPOSITORY/MY_IMAGE:latest
 ```
+
+
+### Step 5: Tagging the Docker Image
+
+```sh
+docker tag gcp-deployment:latest gcr.io/YOUR_PROJECT_ID/gcp-deployment:latest
+```
+This **creates a new tag** for an existing Docker image, preparing it for upload to **Google Container Registry (GCR)**.
+
+🔹 **`docker tag`** → Tags an existing image with a new name.
+🔹 **`gcp-deployment:latest`** → **existing local image**.
+🔹 **`gcr.io/MY_PROJECT_ID/gcp-deployment:latest`** → **new name** (target location in GCR).
+
+After tagging, image can be pushed to GCR with:
+
+```sh
+docker push gcr.io/MY_PROJECT_ID/gcp-deployment:latest
+```
