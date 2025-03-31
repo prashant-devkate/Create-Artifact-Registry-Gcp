@@ -62,6 +62,9 @@ Now that image is stored in Artifact Registry, it can be deployed to **Google Cl
 gcloud run deploy cloudrun-app --image=us-central1-docker.pkg.dev/braided-trees-453709-c4/cloudrun-app/gcp-deployment:latest --region=us-central1 --platform=managed --allow-unauthenticated
 ```
 
+![image](https://github.com/user-attachments/assets/c2f9b799-75f6-42eb-a5c6-b123cf650f7e)
+
+
 ### 🔍 Breakdown of the Deployment Command:
 - **`gcloud run deploy cloudrun-app`** → Deploys a new **Cloud Run** service named `cloudrun-app`.
 - **`--image=us-central1-docker.pkg.dev/...`** → container image to be deployed.
@@ -69,6 +72,7 @@ gcloud run deploy cloudrun-app --image=us-central1-docker.pkg.dev/braided-trees-
 - **`--allow-unauthenticated`** → Allows public access to the deployed service (optional).
 
   **Check Deployment Status:** → using **service URL**
+  Service URL: https://cloudrun-app-741905373966.us-central1.run.app
 
 🎯 **containerized application is now live on Google Cloud Run!**
 
