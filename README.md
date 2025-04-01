@@ -1,4 +1,4 @@
-## Creating an Artifact Registry in Google Cloud to deploy Docker Containers
+## Deploy Docker Containers to Google Cloud
 
 ### Step 1: Open Artifact Registry
 1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
